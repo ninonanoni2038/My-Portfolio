@@ -1,0 +1,53 @@
+@charset "UTF-8";
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.top-box {
+  height: 800px; }
+  .top-box .menu-bar {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(240, 240, 240, 0.7); }
+    .top-box .menu-bar img {
+      float: left;
+      height: 70px;
+      padding: 10px; }
+    .top-box .menu-bar ul li {
+      float: right;
+      height: 70px;
+      margin: 0 20px; }
+    .top-box .menu-bar ul li a {
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 48px;
+      margin: 0 auto;
+      color: #1a1a1a; }
+  .top-box .top-image {
+    position: absolute;
+    z-index: 1; }
+    .top-box .top-image img {
+      width: 100%;
+      height: 800px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+
+.message {
+  width: 100%;
+  height: 800px;
+  background-color: gainsboro; }
+  .message #svg-animation .cls-1 {
+    fill: none;
+    stroke: #42b900;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 10px;
+    stroke-dasharray: 1500;
+    /* この行を追加 */
+    stroke-dashoffset: 1500;
+    /* この行を追加 */ }
