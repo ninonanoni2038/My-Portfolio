@@ -47,3 +47,105 @@
   .message-background .message {
     width: 60%;
     margin: 200px auto; }
+
+.about-box {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto; }
+  .about-box h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    font-size: 80px;
+    padding: 30px 0px 70px 0px; }
+  .about-box img {
+    width: 60%;
+    float: left; }
+  .about-box .about-text-box {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 1100px;
+    left: 750px;
+    background-color: white;
+    border: 3px solid #1a1a1a; }
+  .about-box h2 {
+    font-size: 50px; }
+  .about-box h3 {
+    font-family: 'Oswald', sans-serif;
+    margin: -20px 0px 0px 0px;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #aaaaaa; }
+  .about-box .familyname {
+    height: auto;
+    width: auto;
+    margin: 30px 0px 0px 50px;
+    float: left; }
+  .about-box .firstname {
+    height: auto;
+    width: auto;
+    margin: 30px 0px 0px 30px; }
+  .about-box p {
+    width: 600px;
+    height: 250px;
+    padding: 10px 50px;
+    line-height: 30px; }
+
+.skill-box {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto; }
+  .skill-box .hoge {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly; }
+    .skill-box .hoge .skill {
+      width: 30%;
+      height: 600px;
+      background-color: white;
+      text-align: center; }
+      .skill-box .hoge .skill .skill-title {
+        font-size: 34px;
+        font-family: 'Oswald', sans-serif;
+        margin: 10px 0px;
+        letter-spacing: 4px; }
+      .skill-box .hoge .skill .skill-icon-bg {
+        width: 200px;
+        height: 200px;
+        background-color: lightgray;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%; }
+      .skill-box .hoge .skill .skill-icon-bg img {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; }
+      .skill-box .hoge .skill .skill-text {
+        line-height: 40px;
+        margin-bottom: 30px; }
+  .skill-box h1 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 160px;
+    font-size: 80px;
+    padding: 30px 0px 30px 0px; }
