@@ -292,7 +292,7 @@ html {
       color: #FFF; }
 
 .modal-work-box .modal-work {
-  width: 1100px;
+  width: 1200px;
   height: 604px;
   position: fixed;
   /* viewpointを相対位置にする */
@@ -306,8 +306,8 @@ html {
     float: left; }
   .modal-work-box .modal-work .modal-work-text {
     height: 600px;
-    width: 600px;
-    width: cover;
+    width: 596px;
+    margin: 0 auto;
     float: left;
     text-align: center;
     padding: 0 50px;
