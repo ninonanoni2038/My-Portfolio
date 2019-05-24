@@ -273,7 +273,7 @@ html {
       right: 0; }
     .work-box .works .work button {
       width: 100px;
-      height: 40px;
+      height: 30px;
       position: absolute;
       margin: auto;
       bottom: 10px;
@@ -291,9 +291,9 @@ html {
       background: #D04255;
       color: #FFF; }
 
-.modal-work-box .modal-work1 {
-  width: cover;
-  height: 600px;
+.modal-work-box .modal-work {
+  width: 1100px;
+  height: 604px;
   position: fixed;
   /* viewpointを相対位置にする */
   border: 2px solid #D04255;
@@ -301,20 +301,22 @@ html {
   display: none;
   z-index: 2;
   /* 「オーバーレのHTML要素」よりもスタックレベルを高くする */ }
-  .modal-work-box .modal-work1 img {
+  .modal-work-box .modal-work img {
     height: 600px;
     float: left; }
-  .modal-work-box .modal-work1 .modal-work-text {
+  .modal-work-box .modal-work .modal-work-text {
     height: 600px;
+    width: 600px;
+    width: cover;
     float: left;
     text-align: center;
     padding: 0 50px;
     position: relative; }
-  .modal-work-box .modal-work1 .modal-work-text h2 {
+  .modal-work-box .modal-work .modal-work-text h2 {
     margin: 30px 0; }
-  .modal-work-box .modal-work1 .modal-work-text p {
+  .modal-work-box .modal-work .modal-work-text p {
     line-height: 50px; }
-  .modal-work-box .modal-work1 button {
+  .modal-work-box .modal-work button {
     width: 100px;
     height: 40px;
     position: absolute;
@@ -330,7 +332,7 @@ html {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s; }
-  .modal-work-box .modal-work1 button:hover {
+  .modal-work-box .modal-work button:hover {
     background: #D04255;
     color: #FFF; }
 

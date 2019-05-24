@@ -295,7 +295,7 @@ html{
 
         .work button {
             width: 100px;
-            height: 40px;
+            height: 30px;
             position: absolute;
             margin:auto;
             bottom:10px;
@@ -316,9 +316,9 @@ html{
     }
 }
 .modal-work-box {
-    .modal-work1 {
-        width: cover;
-        height: 600px;
+    .modal-work{
+        width: 1100px;
+        height: 604px;
         position: fixed;
         /* viewpointを相対位置にする */
         border: 2px solid #D04255;
@@ -334,6 +334,8 @@ html{
 
         .modal-work-text {
             height:600px;
+            width:600px;
+            width:cover;
             float: left;
             text-align: center;
             padding:0 50px;
