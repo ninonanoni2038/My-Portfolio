@@ -5,35 +5,84 @@
     box-sizing: border-box;
 }
 
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.fadeinUp {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 2s;
+}
+
+.fadeinLeft {
+  opacity : 0;
+  transform: translateX(20px);
+  transition: all 2s;
+}
+
+.fadeinRight {
+  opacity : 0;
+  transform: translateX(-20px);
+  transition: all 2s;
+}
+
+.fadeinRight-1 {
+  opacity : 0;
+  transform: translateX(-20px);
+  transition: all 2s;
+}
+
+.fadeinRight-2 {
+  opacity : 0;
+  transform: translateX(-20px);
+  transition: all 2s;
+}
+
+.fadeinRight-3 {
+  opacity : 0;
+  transform: translateX(-20px);
+  transition: all 2s;
+}
+
+.menu-bar {
+    display: none;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(240, 240, 240, 0.7);
+
+    img {
+        float: left;
+        height: 50px;
+        padding:5px 10px 5px 10px;
+    }
+
+    ul li {
+        float: right;
+        height: 50px;
+        margin: 0 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        margin: 0 auto;
+        color: #1a1a1a;
+    }
+
+    ul li a:hover {
+        color: #7a7a7a;
+        transition: 0.5s;
+    }
+}
 .top-box{
     height:800px;
-    .menu-bar{
-        display: none;
-        position: absolute;
-        z-index:2;
-        width:100%;
-        height: 70px;
-        background-color: rgba(240,240,240,0.7);
-        img{
-            float: left;
-            height: 70px;
-            padding:10px;
-        }
-        ul li{
-            float:right;
-            height:70px;
-            margin: 0 20px;
-        }
-        ul li a{
-            text-decoration: none;
-            font-family: 'Oswald', sans-serif;
-            font-size: 48px;
-            margin: 0 auto;
-            color: #1a1a1a;
-        }
-    }
-    
-    
     .top-image{
         position: absolute;
         z-index: 1;
@@ -56,7 +105,6 @@
        margin: 200px auto;
     }
 }
-
 .about-box {
     width: 100%;
     height: 800px;
@@ -69,7 +117,7 @@
         width: 400px;
         height: 200px;
         font-size: 80px;
-        padding: 30px 0px 70px 0px;
+        padding: 70px 0px 30px 0px;
     }
     
     img{
@@ -123,7 +171,7 @@
     height: 800px;
     margin: 0 auto;
 
-    .hoge {
+    .skills {
         width: 1200px;
         height: 600px;
         margin: 0 auto;
@@ -134,6 +182,7 @@
         .skill {
             width: 30%;
             height: 600px;
+            margin-top: 10px;
             background-color: white;
             text-align: center;
 
@@ -144,8 +193,8 @@
                 letter-spacing: 4px;
             }
             .skill-icon-bg {
-                width: 200px;
-                height: 200px;
+                width: 180px;
+                height: 180px;
                 background-color: lightgray;
                 margin: 0 auto;
                 position: relative;
@@ -154,8 +203,8 @@
 
             .skill-icon-bg img {
                 position: absolute;
-                width: 150px;
-                height: 150px;
+                width: 130px;
+                height: 130px;
                 top: 0;
                 bottom: 0;
                 left: 0;
@@ -164,7 +213,7 @@
             }
             .skill-text{
                 line-height: 40px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
         }
         
@@ -176,9 +225,9 @@
         margin: 0 auto;
         text-align: center;
         width: 400px;
-        height: 160px;
+        height: 200px;
         font-size: 80px;
-        padding: 30px 0px 30px 0px;
+        padding: 70px 0px 30px 0px;
     }
 
 
@@ -195,7 +244,7 @@
         width: 400px;
         height: 200px;
         font-size: 80px;
-        padding: 30px 0px 70px 0px;
+        padding: 70px 0px 30px 0px;
     }
 
     .works {
@@ -234,25 +283,110 @@
             color: white;
         }
         
-        img{
-            height: 300px;
-            width: 300px;
+        .work img{
+            height: 250px;
+            width: 250px;
             position: absolute;
             margin:auto;
             top: 0;
-            bottom: 0;
             left: 0;
             right: 0;
         }
-        
+
+        .work button {
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            margin:auto;
+            bottom:10px;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            color: #D04255;
+            background-color: #FFF;
+            border: solid 2px #D04255;
+            border-radius: 20px;
+            transition: .4s;
+        }
+
+        .work button:hover {
+            background: #D04255;
+            color: #FFF;
+        }
     }
+}
+.modal-work-box {
+    .modal-work1 {
+        width: cover;
+        height: 600px;
+        position: fixed;
+        /* viewpointを相対位置にする */
+        border: 2px solid #D04255;
+        background-color: #FFF;
+        display: none;
+        z-index: 2;
+
+        /* 「オーバーレのHTML要素」よりもスタックレベルを高くする */
+        img {
+            height: 600px;
+            float: left;
+        }
+
+        .modal-work-text {
+            height:600px;
+            float: left;
+            text-align: center;
+            padding:0 50px;
+            position: relative;
+        }
+
+        .modal-work-text h2{
+            margin: 30px 0;
+        }
+        .modal-work-text p{
+            line-height: 50px;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            bottom:20px;
+            right:0;
+            left:0;
+            margin: auto;
+            font-size: 12px;
+            color: #D04255;
+            background-color: #FFF;
+            border: solid 2px #D04255;
+            border-radius: 20px;
+            transition: .4s;
+        }
+        button:hover {
+            background: #D04255;
+            color: #FFF;
+        }
+
+    }
+}
+
+#overlay {
+  /* viewpointを相対位置にし、全画面表示にする */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);  /* 背景を半透明にする */
+  display: none;  /* HTML要素を非表示にする */
+  z-index: 1  /* 「メインのHTML要素」よりもスタックレベルを高くする */
 }
 
 .vision-box {
     width: 100%;
-    height: 800px;
+    height: 850px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 
     h1 {
         font-family: 'Oswald', sans-serif;
@@ -261,16 +395,29 @@
         width: 400px;
         height: 200px;
         font-size: 80px;
-        padding: 30px 0px 70px 0px;
+        padding: 70px 0px 30px 0px;
     }
-    
-    h2{
+
+    h2 {
         font-size: 48px;
-        margin-bottom:24px;
+        margin-bottom: 24px;
     }
-    
-    p{
-        line-height: 50px;
-        font-size:18px ;
+
+    .vision-text {
+        line-height: 55px;
+        font-size: 18px;
+    }
+
+}
+
+footer {
+    text-align: center;
+    background-color:gray;
+    height: cover;
+    width:100%;
+    .footer-text{
+        padding:10px;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 1px;
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   list-style: none;
   margin: 0;
@@ -5,29 +6,93 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
+.fadeinUp {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
+
+.fadeinLeft {
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
+
+.fadeinRight {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
+
+.fadeinRight-1 {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
+
+.fadeinRight-2 {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
+
+.fadeinRight-3 {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s; }
+
+.menu-bar {
+  display: none;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(240, 240, 240, 0.7); }
+  .menu-bar img {
+    float: left;
+    height: 50px;
+    padding: 5px 10px 5px 10px; }
+  .menu-bar ul li {
+    float: right;
+    height: 50px;
+    margin: 0 20px; }
+  .menu-bar ul li a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #1a1a1a; }
+  .menu-bar ul li a:hover {
+    color: #7a7a7a;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
 .top-box {
   height: 800px; }
-  .top-box .menu-bar {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(240, 240, 240, 0.7); }
-    .top-box .menu-bar img {
-      float: left;
-      height: 70px;
-      padding: 10px; }
-    .top-box .menu-bar ul li {
-      float: right;
-      height: 70px;
-      margin: 0 20px; }
-    .top-box .menu-bar ul li a {
-      text-decoration: none;
-      font-family: 'Oswald', sans-serif;
-      font-size: 48px;
-      margin: 0 auto;
-      color: #1a1a1a; }
   .top-box .top-image {
     position: absolute;
     z-index: 1; }
@@ -59,7 +124,7 @@
     width: 400px;
     height: 200px;
     font-size: 80px;
-    padding: 30px 0px 70px 0px; }
+    padding: 70px 0px 30px 0px; }
   .about-box img {
     width: 60%;
     float: left; }
@@ -98,7 +163,7 @@
   width: 100%;
   height: 800px;
   margin: 0 auto; }
-  .skill-box .hoge {
+  .skill-box .skills {
     width: 1200px;
     height: 600px;
     margin: 0 auto;
@@ -112,43 +177,44 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
-    .skill-box .hoge .skill {
+    .skill-box .skills .skill {
       width: 30%;
       height: 600px;
+      margin-top: 10px;
       background-color: white;
       text-align: center; }
-      .skill-box .hoge .skill .skill-title {
+      .skill-box .skills .skill .skill-title {
         font-size: 34px;
         font-family: 'Oswald', sans-serif;
         margin: 10px 0px;
         letter-spacing: 4px; }
-      .skill-box .hoge .skill .skill-icon-bg {
-        width: 200px;
-        height: 200px;
+      .skill-box .skills .skill .skill-icon-bg {
+        width: 180px;
+        height: 180px;
         background-color: lightgray;
         margin: 0 auto;
         position: relative;
         border-radius: 50%; }
-      .skill-box .hoge .skill .skill-icon-bg img {
+      .skill-box .skills .skill .skill-icon-bg img {
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto; }
-      .skill-box .hoge .skill .skill-text {
+      .skill-box .skills .skill .skill-text {
         line-height: 40px;
-        margin-bottom: 30px; }
+        margin-bottom: 20px; }
   .skill-box h1 {
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
     text-align: center;
     width: 400px;
-    height: 160px;
+    height: 200px;
     font-size: 80px;
-    padding: 30px 0px 30px 0px; }
+    padding: 70px 0px 30px 0px; }
 
 .work-box {
   width: 100%;
@@ -161,7 +227,7 @@
     width: 400px;
     height: 200px;
     font-size: 80px;
-    padding: 30px 0px 70px 0px; }
+    padding: 70px 0px 30px 0px; }
   .work-box .works {
     margin: 0 auto;
     display: -webkit-box;
@@ -197,21 +263,96 @@
       left: 0;
       right: 0;
       color: white; }
-    .work-box .works img {
-      height: 300px;
-      width: 300px;
+    .work-box .works .work img {
+      height: 250px;
+      width: 250px;
       position: absolute;
       margin: auto;
       top: 0;
-      bottom: 0;
       left: 0;
       right: 0; }
+    .work-box .works .work button {
+      width: 100px;
+      height: 40px;
+      position: absolute;
+      margin: auto;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      font-size: 12px;
+      color: #D04255;
+      background-color: #FFF;
+      border: solid 2px #D04255;
+      border-radius: 20px;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+    .work-box .works .work button:hover {
+      background: #D04255;
+      color: #FFF; }
+
+.modal-work-box .modal-work1 {
+  width: cover;
+  height: 600px;
+  position: fixed;
+  /* viewpointを相対位置にする */
+  border: 2px solid #D04255;
+  background-color: #FFF;
+  display: none;
+  z-index: 2;
+  /* 「オーバーレのHTML要素」よりもスタックレベルを高くする */ }
+  .modal-work-box .modal-work1 img {
+    height: 600px;
+    float: left; }
+  .modal-work-box .modal-work1 .modal-work-text {
+    height: 600px;
+    float: left;
+    text-align: center;
+    padding: 0 50px;
+    position: relative; }
+  .modal-work-box .modal-work1 .modal-work-text h2 {
+    margin: 30px 0; }
+  .modal-work-box .modal-work1 .modal-work-text p {
+    line-height: 50px; }
+  .modal-work-box .modal-work1 button {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 12px;
+    color: #D04255;
+    background-color: #FFF;
+    border: solid 2px #D04255;
+    border-radius: 20px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
+  .modal-work-box .modal-work1 button:hover {
+    background: #D04255;
+    color: #FFF; }
+
+#overlay {
+  /* viewpointを相対位置にし、全画面表示にする */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  /* 背景を半透明にする */
+  display: none;
+  /* HTML要素を非表示にする */
+  z-index: 1; }
 
 .vision-box {
   width: 100%;
-  height: 800px;
+  height: 850px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .vision-box h1 {
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
@@ -219,10 +360,20 @@
     width: 400px;
     height: 200px;
     font-size: 80px;
-    padding: 30px 0px 70px 0px; }
+    padding: 70px 0px 30px 0px; }
   .vision-box h2 {
     font-size: 48px;
     margin-bottom: 24px; }
-  .vision-box p {
-    line-height: 50px;
+  .vision-box .vision-text {
+    line-height: 55px;
     font-size: 18px; }
+
+footer {
+  text-align: center;
+  background-color: gray;
+  height: cover;
+  width: 100%; }
+  footer .footer-text {
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px; }

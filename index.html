@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+<!--    <link rel="stylesheet" href="modaal.css">-->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/loading.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/fadein.js"></script>
+<!--    <script type="text/javascript" src="js/modaal.js"></script>-->
+    <script type="text/javascript" src="js/modal.js"></script>
 </head>
 
 <body>
-    <div class="top-box">
+    <nav class="menu-bar">
+            <img src="img/ninomworkslogo.png" alt="">
+            <ul>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    <div class="top-box" id="top">
+<!--
         <nav class="menu-bar">
             <img src="img/ninomworkslogo.png" alt="">
             <ul>
@@ -22,6 +35,7 @@
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
+-->
         <div class="top-image">
             <img src="img/ninomain.JPG" alt="">
         </div>
@@ -137,9 +151,9 @@
         </div>
     </div>
     <div class="about-box" id="about">
-        <h1>About</h1>
-        <img src="img/ninoabout.JPG" alt="">
-        <div class="about-text-box">
+        <h1 class="fadeinUp">About</h1>
+        <img src="img/ninoabout.JPG" alt="" class="fadeinRight">
+        <div class="about-text-box fadeinLeft">
             <div class="familyname">
                 <h2>二宮</h2>
                 <h3>Ninomiya</h3>
@@ -159,9 +173,9 @@
         </div>
     </div>
     <div class="skill-box" id="skill">
-        <h1>Skill</h1>
-        <div class="hoge">
-            <div class="skill">
+        <h1 class="fadeinUp">Skill</h1>
+        <div class="skills">
+            <div class="skill fadeinUp">
                 <div class="skill-icon-bg">
                     <img src="img/coding-icon.png" alt="">
                 </div>
@@ -178,7 +192,7 @@
                 <p>Swift　/　HTML　/　CSS　/　JS</p>
             </div>
 
-            <div class="skill">
+            <div class="skill fadeinUp">
                 <div class="skill-icon-bg">
                     <img src="img/design-icon.png" alt="">
                 </div>
@@ -194,7 +208,8 @@
                 </p>
                 <p>illustrator　/　Photoshop　/　lightroom</p>
             </div>
-            <div class="skill">
+            
+            <div class="skill fadeinUp">
                 <div class="skill-icon-bg">
                     <img src="img/movie-icon.png" alt="">
                 </div>
@@ -213,42 +228,61 @@
         </div>
     </div>
     <div class="work-box" id="work">
-        <h1>Work</h1>
+        <h1 class="fadeinUp">Work</h1>
         <div class="works">
-            <div class="work-black">
+            <div class="work work-black fadeinRight-1">
                 <img src="img/work-ninomworks.png" alt="">
+                <button id="open">詳しく見る</button>
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-2">
                 <img src="img/work-poster.png" alt="">
             </div>
-            <div class="work-white">
+            <div class="work work-white fadeinRight-3">
                 <img src="img/work-urslogo.png" alt="">
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-1">
                 <img src="img/work-heiseiemowordgacha.png" alt="">
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-2">
                 <h3>coming soon...</h3>
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-3">
                 <h3>coming soon...</h3>
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-1">
                 <h3>coming soon...</h3>
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-2">
                 <h3>coming soon...</h3>
             </div>
-            <div class="work-black">
+            <div class="work work-black fadeinRight-3">
                 <h3>coming soon...</h3>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="modal-work-box">
+        <div class="modal-work1">
+            <img src="img/modal-work-ninomworks.png" alt="">
+            <div class="modal-work-text">
+            <h2>ninomworks logo</h2>
+            <p>
+            日々のアウトプットを発信する<br>
+            自身のinstagramアカウントの<br>
+            ロゴである。名刺や自分の<br>
+            ポートフォリオサイトでも使いやすいように<br>
+            横長長方形になるようなロゴかつ<br>
+            スタイリッシュに見えるように制作した
+            </p>
+            <button id="close">Close</button>
             </div>
             
         </div>
     </div>
     <div class="vision-box" id="vision">
-        <h1>Vision</h1>
-        <h2>“人を魅了するクリエイターになりたい”</h2>
-        <p>
+        <h1 class="fadeinUp">Vision</h1>
+        <h2 class="fadeinUp">“人を魅了するクリエイターになりたい”</h2>
+        <p class="vision-text fadeinUp">
             誰かの憧れになるような生き様で<br>
             誰かの目に止まり変化のきっかけを<br>
             与えられるような作品を作り続けたい。<br>
@@ -258,8 +292,10 @@
             自分が周りの人に影響を与えられるような、<br>
             人を魅了するクリエイターになりたい。
         </p>
-        
     </div>
+    <footer>
+    <p class="footer-text">©️ 2019 Satohsi Ninomiya All rights reserved.</p>
+</footer>
 </body>
 
 </html>
