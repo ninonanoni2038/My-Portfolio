@@ -81,14 +81,16 @@ html{
         transition: 0.5s;
     }
 }
-.top-box{
-    height:800px;
-    .top-image{
+.top-box {
+    height: 800px;
+
+    .top-image {
         position: absolute;
         z-index: 1;
-        img{
-            width:100%;
-            height:800px;
+
+        img {
+            width: 100%;
+            height: 800px;
             object-fit: cover;
         }
     }
@@ -109,6 +111,8 @@ html{
     width: 100%;
     height: 800px;
     margin: 0 auto;
+    background-image: url(img/About-box-bg.png);
+    background-size: contain;
 
     h1 {
         font-family: 'Oswald', sans-serif;
@@ -125,25 +129,57 @@ html{
         float: left;
     }
     .about-text-box{
-        width:600px;
-        height:400px;
+        width:40%;
+        min-width: 40%;
+        height:50%;
         position: absolute;
         top:1100px;
-        left:750px;
+        left:55%;
         background-color: white;
         border: 3px solid #1a1a1a;
+        overflow: hidden;
     } 
     
-    h2{
-        font-size: 50px;
+    @media screen and (max-width: 1440px){
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            margin: -20px 0px 0px 0px;
+            font-size: 28px;
+            letter-spacing: 3px;
+            color: #aaaaaa;
+        }
+        p {
+            width: 600px;
+            height: 250px;
+            padding: 10px 50px;
+            line-height: 30px;
+        }
     }
-    h3{
-        font-family: 'Oswald', sans-serif;
-        margin:-20px 0px 0px 0px;
-        font-size: 28px;
-        letter-spacing: 3px;
-        color:#aaaaaa;
+     @media screen and (max-width: 1300px){
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            margin: -10px 0px 0px 0px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: #aaaaaa;
+        }
+         p {
+             font-size: 12px;
+             width: 80%;
+             height: 250px;
+             padding: 10px 50px;
+             line-height: 30px;
+         }
     }
+    
    
     .familyname {
         height: auto;
@@ -159,20 +195,18 @@ html{
         margin:30px 0px 0px 30px;
     }
     
-    p{
-        width:600px;
-        height:250px; 
-        padding:10px 50px;
-        line-height: 30px;
-    }
+    
 }
 .skill-box {
     width: 100%;
     height: 800px;
     margin: 0 auto;
-
+    background-image: url(img/Skill-box-bg.png);
+    background-size: contain;
+    background-color: #8db6db;
+    
     .skills {
-        width: 1200px;
+        width: 80%;
         height: 600px;
         margin: 0 auto;
         display: flex;
@@ -182,8 +216,7 @@ html{
         .skill {
             width: 30%;
             height: 600px;
-            margin-top: 10px;
-            background-color: white;
+            margin-top: 100px;
             text-align: center;
 
             .skill-title{
@@ -195,10 +228,11 @@ html{
             .skill-icon-bg {
                 width: 180px;
                 height: 180px;
-                background-color: lightgray;
+                background-color: white;
                 margin: 0 auto;
                 position: relative;
                 border-radius: 50%;
+                
             }
 
             .skill-icon-bg img {
@@ -214,7 +248,57 @@ html{
             .skill-text{
                 line-height: 40px;
                 margin-bottom: 20px;
+                color:white;
+                overflow: hidden;
             }
+            .skill-name{
+                font-family: 'Oswald', sans-serif;
+            }
+            #skill-text1{
+                height:0px;
+                transition:1s;
+            }
+            
+            #skill-text2{
+                height:0px;
+                transition:1s;
+            }
+            
+            #skill-text3{
+                height:0px;
+                transition:1s;
+            }
+            
+            .skill-name{
+                margin-top: 10px;
+            }
+        }
+        
+        #skill1:hover{
+            margin-top: 0px;
+            transition:1s;
+        }
+        #skill1:hover #skill-text1{
+            height:280px;
+            transition:1s;
+        }
+        
+        #skill2:hover{
+            margin-top: 10px;
+            transition:1s;
+        }
+        #skill2:hover #skill-text2{
+            height:280px;
+            transition:1s;
+        }
+        
+        #skill3:hover{
+            margin-top: 10px;
+            transition:1s;
+        }
+        #skill3:hover #skill-text3{
+            height:280px;
+            transition:1s;
         }
         
         
@@ -236,7 +320,10 @@ html{
     width: 100%;
     height: 1600px;
     margin: 0 auto;
-
+    background-image: url(img/work-box-bg.png);
+    background-size: contain;
+    background-color: #8db6db;
+    
     h1 {
         font-family: 'Oswald', sans-serif;
         margin: 0 auto;
@@ -252,7 +339,11 @@ html{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width:1200px;
+        justify-content: center;
+        /* 子要素をflexboxにより中央に配置する */
+        align-items: center;
+        width:85%;
+        overflow: hidden;
         
         .work-black {
             margin: 50px;
@@ -260,6 +351,7 @@ html{
             height: 300px;
             background-color: #1a1a1a;
             position: relative;
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
         }
         
         .work-white {
@@ -313,7 +405,36 @@ html{
             background: #D04255;
             color: #FFF;
         }
-    }
+        
+        @media screen and (min-width:0px) {
+            /*0px以上で適用する内容*/
+            #work7{
+                display: none;
+            }
+            #work8{
+                display: none;
+            }
+            #work9{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            /*600px以上で適用する内容*/
+            #work7{
+                display: block;
+            }
+            #work8{
+                display: block;
+            }
+            #work9{
+                display: block;
+            }
+        }
+        
+}
+    
+ 
 }
 .modal-work-box {
     .modal-work{
@@ -389,32 +510,36 @@ html{
     margin: 0 auto;
     text-align: center;
     position: relative;
+    background-image: url(img/Vision-box-bg.png);
+    background-size: contain;
+    background-color: #8db6db;
+    background-repeat: no-repeat;
 
     h1 {
         font-family: 'Oswald', sans-serif;
         margin: 0 auto;
         text-align: center;
         width: 400px;
-        height: 200px;
-        font-size: 80px;
-        padding: 70px 0px 30px 0px;
+        height: 15vw;
+        font-size: 6vw;
+        padding: 5vw 0px 2vw 0px;
     }
 
     h2 {
-        font-size: 48px;
-        margin-bottom: 24px;
+        font-size: 3.5vw;
+        margin-bottom: 2vw;
     }
 
     .vision-text {
-        line-height: 55px;
-        font-size: 18px;
+        line-height: 3.5vw;
+        font-size: 1.3vw;//18px
     }
 
 }
 
 footer {
     text-align: center;
-    background-color:gray;
+    background-color:white;
     height: cover;
     width:100%;
     .footer-text{

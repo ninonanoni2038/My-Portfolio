@@ -2,6 +2,12 @@ $(function () {
     // 「Open」ボタンをクリック時に、fadeInメソッドでHTML要素を表示する
     $('#open1').on('click', function () {
         $('#overlay, #modal-work1').fadeIn();
+        $('html').css({
+            overflow:hidden
+        });
+        $('body').css({
+            overflow:hidden
+        });
     });
     // 「Close」ボタンをクリック時に、fadeOutメソッドでHTML要素を非表示にする
     $('#close1').on('click', function () {
