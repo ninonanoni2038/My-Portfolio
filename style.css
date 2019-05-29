@@ -133,14 +133,14 @@ html {
   .about-box .about-text-box {
     width: 40%;
     min-width: 40%;
-    height: 50%;
+    height: 400px;
     position: absolute;
     top: 1100px;
     left: 55%;
     background-color: white;
     border: 3px solid #1a1a1a;
-    overflow: hidden; }
-  @media screen and (max-width: 1440px) {
+    overflow: scroll; }
+  @media screen and (min-width: 1330px) {
     .about-box h2 {
       font-size: 50px; }
     .about-box h3 {
@@ -309,6 +309,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 1400px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
