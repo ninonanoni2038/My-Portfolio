@@ -11,6 +11,12 @@ html{
   scroll-behavior: smooth;
 }
 
+a {
+text-decoration: none;
+    color:cornflowerblue;
+}
+
+
 .fadeinUp {
   opacity : 0;
   transform: translateY(20px);
